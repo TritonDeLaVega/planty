@@ -12,11 +12,12 @@
 .site-footer {
     font-family: 'Syne', sans-serif;
     background-color: #ffffff; /* Couleur de fond du footer */
-    padding: 20px 0; /* Espacement interne du footer */
+    padding: 0; /* Espacement interne du footer */
     text-align: center; /* Centre le texte */
     width: 100%; /* Assure que le footer prend toute la largeur */
     position: fixed; /* Fixe le footer en bas de la page */
     bottom: 0; /* Positionne le footer en bas */
+    z-index: 3;
 }
 
 .footer-content {
@@ -61,9 +62,13 @@
 }
 
 .main-banner {
-    background-color: #f4f1eb; /* Beige clair */
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
     text-align: center;
     padding: 50px 20px;
+    
     
 }
 .main-banner h1 {
@@ -101,8 +106,13 @@
 }
 
 .flavors {
-    background-color: #f4f1eb; /* Beige clair */
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
     padding: 20px;  /* Optionnel : ajoute un peu de padding pour espacer le contenu du bord */
+    
+      
 }
 
 .flavors .flavor-list {
@@ -282,4 +292,7 @@
 .canette {
     position: relative;
     z-index: 2; /* La canette doit être au-dessus des feuilles */
+}
+.main-banner {
+    margin: 0 !important;  /* Supprimer la marge de 20px et la remplacer par 0 */
 }
