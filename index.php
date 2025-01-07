@@ -63,12 +63,13 @@ get_header();
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Phomme.jpg" alt="Marc">
             <p><strong>Marc</strong><br>Un boost d’énergie sans<br>produits chimiques, un vrai<br>plus dans ma journée.</p>
         </div>
-        <div>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cannettes.jpg" alt="cannettes en fresque">
-        </div>
     </div>
 </div>
+<div>
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cannettes.png" alt="cannettes en fresque" class="cannettes">
+</div>
 </section>
+
 <?php
 get_footer();
 ?>

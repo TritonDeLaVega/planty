@@ -229,6 +229,7 @@ body {
     background-color: #ffffff;
     padding: 0;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .testimonials h2 {
@@ -314,6 +315,18 @@ body {
     position: relative;
     z-index: 2; /* La canette doit être au-dessus des feuilles */
 }
+.cannettes {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-60px); /* Ajustez -20px pour le décalage vertical */
+}
+
+
+.cannettes img {
+    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
 .main-banner {
     margin: 0 !important;  /* Supprimer la marge de 20px et la remplacer par 0 */
 }
@@ -486,10 +499,8 @@ body {
 
 /* Fresque des cannettes */
 .section-contact .fresque {
-    margin-top: 20px;
     width: 100%;
     max-width: 100%; /* Occupe toute la largeur de la page */
-    position: relative; bottom: 0; /* Place les cannettes en bas du fond beige */
-    margin-bottom: 0; /* Enlève l'espace blanc en bas */
     text-align: center; /* Centre la fresque */
+    transform: translateY(5px); /* Ajustez -20px pour le décalage vertical */
 }
