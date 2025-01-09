@@ -19,7 +19,7 @@
             <?php if (is_user_logged_in()) : ?>
                 <a href="<?php echo admin_url(); ?>">Admin</a>
             <?php endif; ?>
-            <a href="#" class="order-button">Commander</a>
+            <a href="<?php echo home_url('/commander/'); ?>" class="order-button">Commander</a>
         </div>
     </header>
     </section>

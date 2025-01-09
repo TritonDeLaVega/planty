@@ -44,7 +44,7 @@ get_header();
             <p class="flavor-text">CITRON</p>
         </div>
     </div>
-    <a href="#" class="order-button">Commander</a>
+    <a href="<?php echo home_url('/commander/'); ?>" class="order-button">Commander</a>
 </div>
 </section>
 <section>

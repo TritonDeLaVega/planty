@@ -504,3 +504,143 @@ body {
     text-align: center; /* Centre la fresque */
     transform: translateY(5px); /* Ajustez -20px pour le décalage vertical */
 }
+
+
+
+/* Page Commander spécifique */
+.commander-page {
+    background-color: #509659; /* Fond vert */
+    padding: 0 20px;
+    padding-bottom: 30px;
+    max-width: 100%; /* Assure que le fond vert couvre toute la largeur */
+    margin: 0 auto; /* Centre la page */
+}
+
+/* Section 1: COMMANDER */
+.commande-header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.6px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%; /* Ajuste la largeur */
+    margin: 0 auto;
+    margin-top: 0; /* Supprime l'espace blanc */
+}
+
+/* Séparateur */
+.commander-page .separator {
+    border: 1px solid #FFFFFF;
+    display: block;
+    width: 100%; /* Ajuste la largeur */
+    max-width: 800px; /* Limite la largeur à 800px */
+    margin: 20px auto; /* Centre le trait de séparation */
+}
+
+/* Section 2: Votre commande */
+.commander-page .order-flavors {
+    max-width: 800px; /* Limite la largeur à 800px */
+    margin: 0 auto; /* Centre la section */
+}
+
+.commander-page .order-flavors h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px; /* Réduit la taille du titre */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 0; /* Aligne à gauche */
+    margin-top: 20px; /* Ajoute un espace sous le trait de h1 */
+}
+
+.commander-page .flavor-options {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne suivante si nécessaire */
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.commander-page .flavor {
+    text-align: center;
+    width: 180px; /* Ajuste la largeur pour que les éléments soient alignés */
+    margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+}
+
+.commander-page .flavor img {
+    width: 100%; /* Ajuste la largeur de l'image pour qu'elle s'adapte au conteneur */
+    height: auto; /* Maintient le ratio de l'image */
+}
+
+.commander-page .flavor-name {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 10px; /* Ajoute un espace entre l'image et le nom */
+}
+
+.commander-page .quantity {
+    display: block;
+    margin: 10px auto;
+    width: 50px;
+}
+
+/* Section 3: Formulaires */
+.commander-page .information-forms {
+    display: flex;
+    flex-direction: row; /* Change la direction en ligne */
+    justify-content: space-between; /* Ajoute de l'espace entre les formulaires */
+    align-items: flex-start; /* Aligne les formulaires en haut */
+    margin: 0 auto;
+    width: 100%; /* Ajuste la largeur */
+    max-width: 800px; /* Limite la largeur à 800px */
+}
+
+.commander-page .form-container {
+    width: 48%; /* Ajuste la largeur des conteneurs de formulaire pour qu'ils tiennent côte à côte */
+    max-width: none; /* Supprime la largeur maximale */
+}
+
+.commander-page h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.commander-page label {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.commander-page input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Bouton Commander */
+.commander-page .order-button-section {
+    text-align: center;
+    margin-top: 10px; /* Ajuste la marge pour remonter le bouton de 20px */
+    margin-bottom: 80px; /* Ajoute 30px de marge supplémentaire sous le bouton */
+}
+
+.commander-page .order-button {
+    font-family: 'Syne', sans-serif;
+    background-color: #E0B9B4;
+    color: white;
+    padding: 9px 56px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* Supprime la bordure noire */
+}
+
+.commander-page .order-button:hover {
+    background-color: #C02E44;
+}
