@@ -28,20 +28,20 @@ get_header();
     <p>Nous avons une saveur pour chaque moment de votre journée.</p>
     <div class="flavor-list">
         <div class="flavor">
-            <img src="<?php echo get_field('gout_1', 85)["url"]?>" alt="<?php echo get_field('gout_1', 85)["alt"]?>">
-            <p class="flavor-text">FRAISE</p>
+            <img src="<?php echo get_field('image_gout_1', 85)["url"]?>" alt="<?php echo get_field('image_gout_1', 85)["alt"]?>">
+            <p class="flavor-text"><?php echo strtoupper(get_field('nom_gout_1', 85))?></p>
         </div>
         <div class="flavor">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/estudio-bloom-tOitjphtIXU-unsplash 1.jpg" alt="Pamplemousse">
-            <p class="flavor-text">PAMPLE<br>MOUSSE</p>
+            <img src="<?php echo get_field('image_gout_2', 85)["url"]?>" alt="<?php echo get_field('image_gout_2', 85)["alt"]?>">
+            <p class="flavor-text"><?php echo strtoupper(get_field('nom_gout_2', 85))?></p>
         </div>
         <div class="flavor">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rodion-kutsaev-4k8xEFW4_3Q-unsplash 1.jpg" alt="Framboise">
-            <p class="flavor-text">FRAM<br>BOISE</p>
+            <img src="<?php echo get_field('image_gout_3', 85)["url"]?>" alt="<?php echo get_field('image_gout_3', 85)["alt"]?>">
+            <p class="flavor-text"><?php echo strtoupper(get_field('nom_gout_3', 85))?></p>
         </div>
         <div class="flavor">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/estudio-bloom-ezqnxsqUZ80-unsplash 1.jpg" alt="Citron">
-            <p class="flavor-text">CITRON</p>
+            <img src="<?php echo get_field('image_gout_4', 85)["url"]?>" alt="<?php echo get_field('image_gout_4', 85)["alt"]?>">
+            <p class="flavor-text"><?php echo strtoupper(get_field('nom_gout_4', 85))?></p>
         </div>
     </div>
     <a href="<?php echo home_url('/commander/'); ?>" class="order-button">Commander</a>

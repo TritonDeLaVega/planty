@@ -562,24 +562,30 @@ body {
     margin-top: 30px;
 }
 
-.commander-page .flavor {
-    text-align: center;
-    width: 180px; /* Ajuste la largeur pour que les éléments soient alignés */
-    margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+.commander-page .flavor-container {
+    position: relative;
+    display: inline-block;
 }
 
-.commander-page .flavor img {
-    width: 100%; /* Ajuste la largeur de l'image pour qu'elle s'adapte au conteneur */
-    height: auto; /* Maintient le ratio de l'image */
+.commander-page .flavor-container img {
+    width: 100%;
+    height: auto;
 }
 
-.commander-page .flavor-name {
+.commander-page .flavor-container .flavor-name {
+    position: absolute;
+    top: 35%; /* Ajuste cette valeur pour positionner le texte plus haut */
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: 'Syne', sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: 800;
     color: #FFFFFF;
-    margin-top: 10px; /* Ajoute un espace entre l'image et le nom */
+    text-align: center;
+    padding: 5px; /* Optionnel : ajoute un peu de padding autour du texte */
 }
+
+
 
 .commander-page .quantity {
     display: block;
@@ -633,7 +639,7 @@ body {
 
 .commander-page .order-button {
     font-family: 'Syne', sans-serif;
-    background-color: #E0B9B4;
+    background-color: #DC9F96;
     color: white;
     padding: 9px 56px;
     border-radius: 5px;
