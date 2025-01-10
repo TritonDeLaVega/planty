@@ -32,21 +32,27 @@ Template Name: Nous Rencontrer
 </section>
 
 <section class="section-contact">
-<h2>Nous rencontrer</h2> <!-- Titre ajouté -->
-    <form>
-        <label for="name">Nom</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
-        <button type="submit" class="submit-button">Envoyer</button>
-    </form>
+    <h2>Nous rencontrer</h2>
+    <form method="post" action="process_form.php">
+    <label for="name">Nom</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+    
+    <label for="message">Message</label>
+    <div class="message-container">
+        <textarea id="message" name="message" rows="4" maxlength="250" required style="resize: none;"></textarea>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/houx.png" alt="Décoration angle" class="angle-decoration">
+    </div>
+    
+    <button type="submit" class="submit-button">Envoyer</button>
+</form>
+
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cannettes.png" alt="Fresque des cannettes" class="fresque">
 </section>
+
+
 <?php
 get_footer();
 ?>

@@ -485,6 +485,21 @@ body {
 .section-contact .submit-button:hover {
     background-color: #C02E44;
 }
+.message-container {
+    position: relative;
+    z-index: 1; /* Place le champ de message devant l'image  */
+}
+
+.angle-decoration {
+    
+    position: absolute;
+    bottom: 0;
+    left: -95px;
+    top: 5px;
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    z-index: -1; /* Place l'image devant le champ de message */
+}
 
 /* Image incrustée */
 .section-contact .background-image {
