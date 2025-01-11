@@ -62,36 +62,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr class="separator">
 
     <form method="POST">
-    <section class="order-flavors">
+    <section class="order-gouts">
         <h2>Votre commande</h2>
-        <div class="flavor-options">
-            <div class="flavor">
-                <div class="flavor-container">
+        <div class="gout-options">
+            <div class="gout">
+                <div class="gout-container">
                     <img src="<?php echo get_field('gout_1', 85)["url"]?>" alt="<?php echo get_field('gout_1', 85)["alt"]?>">
-                    <p class="flavor-name">FRAISE</p>
+                    <p class="gout-name">FRAISE</p>
                 </div>
-                <input type="number" name="flavor_fraise" min="0" value="0" class="quantity">
+                <input type="number" name="gout_fraise" min="0" value="0" class="quantity">
             </div>
-            <div class="flavor">
-                <div class="flavor-container">
+            <div class="gout">
+                <div class="gout-container">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pamplemousse.jpg" alt="Pamplemousse">
-                    <p class="flavor-name">PAMPLE<br>MOUSSE</p>
+                    <p class="gout-name">PAMPLE<br>MOUSSE</p>
                 </div>
-                <input type="number" name="flavor_pamplemousse" min="0" value="0" class="quantity">
+                <input type="number" name="gout_pamplemousse" min="0" value="0" class="quantity">
             </div>
-            <div class="flavor">
-                <div class="flavor-container">
+            <div class="gout">
+                <div class="gout-container">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/framboise.jpg" alt="Framboise">
-                    <p class="flavor-name">FRAM<br>BOISE</p>
+                    <p class="gout-name">FRAM<br>BOISE</p>
                 </div>
-                <input type="number" name="flavor_framboise" min="0" value="0" class="quantity">
+                <input type="number" name="gout_framboise" min="0" value="0" class="quantity">
             </div>
-            <div class="flavor">
-                <div class="flavor-container">
+            <div class="gout">
+                <div class="gout-container">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/citron.jpg" alt="Citron">
-                    <p class="flavor-name">CITRON</p>
+                    <p class="gout-name">CITRON</p>
                 </div>
-                <input type="number" name="flavor_citron" min="0" value="0" class="quantity">
+                <input type="number" name="gout_citron" min="0" value="0" class="quantity">
             </div>
         </div>
         <hr class="separator"> <!-- Ajoutez cette ligne pour le trait de séparation -->
