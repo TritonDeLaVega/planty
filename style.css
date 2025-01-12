@@ -705,3 +705,83 @@ body {
 .commander-page .order-button:hover {
     background-color: #C02E44;
 }
+
+
+/* Empêcher le débordement horizontal */
+body {
+    overflow-x: hidden; /* Empêche les barres de défilement horizontales */
+}
+
+/* Media Query pour les tablettes et mobiles */
+@media (max-width: 768px) {
+    .header .logo img {
+        width: 100%; /* Réduit la largeur du logo pour qu'il ne déborde pas */
+        max-width: 150px; /* Limite la taille du logo */
+    }
+    
+    .main-banner {
+        padding: 40px 10px; /* Réduit le padding pour éviter que le contenu déborde */
+    }
+
+    .main-banner h1 {
+        font-size: 24px; /* Réduit la taille de la police sur mobile/tablette */
+    }
+
+    .flavors .flavor-list {
+        grid-template-columns: 1fr; /* Affiche une seule colonne sur mobile */
+    }
+
+    .testimonials .testimonial-container {
+        flex-direction: column; /* Empile les témoignages verticalement sur mobile */
+        gap: 30px; /* Réduit l'écart entre les témoignages */
+    }
+
+    .flavors .flavor img {
+        width: 100%; /* Assure que les images s'adaptent à la largeur du conteneur */
+        height: auto; /* Maintient les proportions des images */
+    }
+
+    .footer-content {
+        max-width: 100%; /* Assure que le footer prend toute la largeur disponible */
+        padding: 20px;
+    }
+
+    /* Section Rencontrer */
+    .section-rencontrer img {
+        margin-top: -150px; /* Ajuste l'image pour les petits écrans */
+        margin-right: 0;
+    }
+
+    /* Section Équipe */
+    .section-equipe .team-member {
+        margin: 10px;
+    }
+
+    .section-equipe .team-member img {
+        width: 120px; /* Réduit la taille des images pour les membres de l'équipe */
+        height: 120px;
+    }
+}
+
+/* Media Query pour les petits écrans (mobiles) */
+@media (max-width: 480px) {
+    .header .menu a {
+        font-size: 14px; /* Réduit la taille de la police pour les petits écrans */
+    }
+
+    .flavors .flavor-text {
+        font-size: 24px; /* Réduit la taille de la police des textes sur les images */
+    }
+
+    .flavors .order-button {
+        padding: 12px 20px; /* Ajuste les boutons pour les petits écrans */
+    }
+
+    .main-banner img {
+        max-width: 120px; /* Réduit la taille des images du bannière pour mobile */
+    }
+
+    .footer-content a {
+        font-size: 14px; /* Réduit la taille de la police des liens dans le footer */
+    }
+}
