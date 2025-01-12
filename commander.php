@@ -109,6 +109,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
+            <div class="separator-vertical"></div> <!-- Ajoute le trait de séparation vertical -->
             <div class="form-container">
                 <h3>Livraison</h3>
                 <label for="address">Adresse de livraison:</label>

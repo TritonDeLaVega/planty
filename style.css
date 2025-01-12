@@ -618,18 +618,51 @@ body {
 /* Section 3: Formulaires */
 .commander-page .information-forms {
     display: flex;
-    flex-direction: row; /* Change la direction en ligne */
-    justify-content: space-between; /* Ajoute de l'espace entre les formulaires */
-    align-items: flex-start; /* Aligne les formulaires en haut */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0 auto;
-    width: 100%; /* Ajuste la largeur */
-    max-width: 900px; /* Limite la largeur à 900px */
+    width: 100%;
+    max-width: 900px;
+    position: relative;
 }
 
 .commander-page .form-container {
-    width: 48%; /* Ajuste la largeur des conteneurs de formulaire pour qu'ils tiennent côte à côte */
-    max-width: none; /* Supprime la largeur maximale */
+    width: 45%;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
+
+.commander-page .form-container:first-of-type {
+    margin-left: 60px; /* Légèrement plus décalé vers la droite */
+}
+
+.commander-page .form-container h2,
+.commander-page .form-container label {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.commander-page .form-container input[type="text"],
+.commander-page .form-container input[type="email"] {
+    width: 80%; /* Garder la largeur des champs inchangée */
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.commander-page .separator-vertical {
+    border-left: 2px solid #FFFFFF;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 .commander-page h3 {
     font-family: 'Syne', sans-serif;
