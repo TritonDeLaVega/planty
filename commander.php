@@ -40,11 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Envoi des emails (admin + client) avec wp_mail
-    $admin_email = "admin@example.com";
+    $admin_email = "planty.drinks@gmail.com";
     $client_email = $customer_info['email'];
 
     // Envoi de l'email à l'administrateur
-    wp_mail($admin_email, "Nouvelle commande", $message, ['From: no-reply@example.com']);
+    wp_mail($admin_email, "Nouvelle commande", $message, ['From: no-reply@' . $_SERVER['SERVER_NAME']]);
 
     // Envoi de l'email au client
     wp_mail($client_email, "Confirmation de commande", "Votre commande a été reçue :\n" . $message, ['From: no-reply@example.com']);
