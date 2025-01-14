@@ -1,0 +1,248 @@
+.main-banner {
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 20px;
+    
+    
+}
+.main-banner h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3B8E46;
+}
+.main-banner img {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.plant-energy {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Fond blanc */
+    
+}
+.plant-energy h2 {
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color:#3B8E46 ;
+}
+.plant-energy p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.flavors {
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
+    padding: 20px;  /* Optionnel : ajoute un peu de padding pour espacer le contenu du bord */
+    
+      
+}
+
+.flavors .flavor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.flavors .flavor {
+    position: relative;
+    text-align: center;
+}
+
+.flavors .flavor .flavor-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    color: #FFFFFF;
+    position: absolute;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    bottom: 29%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour FRAISE */
+.flavors .flavor .flavor-text.fraise {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour PAMPLEMOUSSE */
+.flavors .flavor .flavor-text.pamplemousse {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour FRAMBOISE */
+.flavors .flavor .flavor-text.framboise {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour CITRON */
+.flavors .flavor .flavor-text.citron {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+
+
+.flavors .order-button {
+    font-family: 'Syne', sans-serif;
+    margin-top: 20px;
+    background-color: #DC9F96;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.flavors .order-button:hover {
+    background-color: #C02E44;
+}
+
+.flavors h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D2776A;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.flavors p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.testimonials {
+    background-color: #ffffff;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.testimonials h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #3B8E46;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.testimonials .testimonial-container {
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap; /* Permet l'adaptation sur petits écrans */
+}
+
+.testimonials .testimonial {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacement entre l'image et le texte */
+    text-align: left; /* Alignement du texte */
+    max-width: 400px; /* Pour limiter la largeur totale */
+}
+
+.testimonials .testimonial img {
+    width: 126px;
+    height: 139px;
+    object-fit: cover;
+    margin: 0; /* Pas de bordures arrondies */
+}
+
+.testimonials .testimonial p {
+    margin: 0;
+    font-size: 16px;
+    color: #000000 ;
+}
+.testimonials .testimonial p strong {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    display: block; /* Pour isoler le nom */
+    width: 75px;
+    height: 36px;
+    margin: 0; /* On ne gère pas `top` et `left` en CSS simple, ce n'est pas adapté ici */
+    gap: 0px;
+    color: #3B8E46;
+}
+
+
+.flavors .flavor img {
+    width: 393px !important;
+    height: 262px !important;
+    object-fit: cover !important; /* Garde une bonne proportion des images */
+    max-width: none !important; /* Désactive la règle max-width */
+}
+.image-composition {
+    position: relative;
+    display: inline-block;
+}
+
+.feuille {
+    position: absolute;
+    top: 17%; /* Remonte les feuilles */
+    
+}
+
+.feuille.gauche {
+    z-index: 1; /* S'assure que la feuille gauche est derrière la canette */
+    transform: translateX(-75%); /* Centre horizontalement */
+    left: 25%;
+}
+
+.feuille.droite {
+    z-index: 1; /* S'assure que la feuille droite est derrière la canette */
+    transform: translateX(27%); /* Centre horizontalement */
+    left: 25%;
+}
+
+.canette {
+    position: relative;
+    z-index: 2; /* La canette doit être au-dessus des feuilles */
+}
+.cannettes {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-60px); /* Ajustez -20px pour le décalage vertical */
+}
+
+
+.cannettes img {
+    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
+.main-banner {
+    margin: 0 !important;  /* Supprimer la marge de 20px et la remplacer par 0 */
+}

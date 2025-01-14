@@ -4,7 +4,16 @@ get_header();
 Template Name: Nous Rencontrer
 */
 ?>
-
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nous rencontrer</title>
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/meet-us.css">
+</head>
+<body>
 <section class="section-rencontrer">
     <h1>NOUS RENCONTRER</h1>
     <p>Chez Planty nous sommes tous passionnés par le bien-être, et ça se retrouve dans nos boissons ! Notre start-up s’est construite au fur et à mesure de rencontres entre amoureux des plantes.</p>
@@ -52,7 +61,8 @@ Template Name: Nous Rencontrer
     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/cannettes.png" alt="Fresque des cannettes" class="fresque">
 </section>
 
-
 <?php
 get_footer();
 ?>
+</body>
+</html>
