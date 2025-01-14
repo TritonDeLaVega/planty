@@ -1,16 +1,6 @@
 <?php
 get_header();
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/home.css">
-</head>
-<body>
 <section>
 <div class="main-banner">
     <h1>BOISSON ÉNERGISANTE<br>100% NATURELLE</h1>
@@ -18,6 +8,7 @@ get_header();
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/feuille gauche.png" alt="Feuille gauche" class="feuille gauche">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/canette.png" alt="Cannette Planty" class="canette">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/feuille droite.png" alt="Feuille droite" class="feuille droite">
+        
     </div>
 </div>
 </section>
@@ -82,5 +73,3 @@ get_header();
 <?php
 get_footer();
 ?>
-</body>
-</html>

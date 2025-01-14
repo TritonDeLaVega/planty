@@ -54,16 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     exit;
 }
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Commander</title>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/order.css">
-</head>
-<body>
+
 <div class="commander-page">
     <section class="commande-header">
         <h1>COMMANDER</h1>
@@ -139,5 +130,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <?php
 get_footer();
 ?>
-</body>
-</html>
+

@@ -83,6 +83,626 @@ body {
     background-color: #C02E44;
 }
 
+
+.main-banner {
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
+    text-align: center;
+    padding: 50px 20px;
+    
+    
+}
+.main-banner h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3B8E46;
+}
+.main-banner img {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+.plant-energy {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Fond blanc */
+    
+}
+.plant-energy h2 {
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color:#3B8E46 ;
+}
+.plant-energy p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.8;
+}
+
+.flavors {
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 10%;
+    border-bottom-right-radius: 100% 10%;
+    overflow: hidden;
+    padding: 20px;  /* Optionnel : ajoute un peu de padding pour espacer le contenu du bord */
+    
+      
+}
+
+.flavors .flavor-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.flavors .flavor {
+    position: relative;
+    text-align: center;
+}
+
+.flavors .flavor .flavor-text {
+    font-family: 'Syne', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57.6px;
+    color: #FFFFFF;
+    position: absolute;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    bottom: 29%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour FRAISE */
+.flavors .flavor .flavor-text.fraise {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour PAMPLEMOUSSE */
+.flavors .flavor .flavor-text.pamplemousse {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour FRAMBOISE */
+.flavors .flavor .flavor-text.framboise {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+/* Position spécifique pour CITRON */
+.flavors .flavor .flavor-text.citron {
+    bottom: 50%; /* Centrer verticalement */
+    left: 50%; /* Centrer horizontalement */
+    transform: translate(-50%, 50%); /* Ajuster pour être parfaitement centré */
+}
+
+
+
+.flavors .order-button {
+    font-family: 'Syne', sans-serif;
+    margin-top: 20px;
+    background-color: #DC9F96;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.flavors .order-button:hover {
+    background-color: #C02E44;
+}
+
+.flavors h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #D2776A;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+.flavors p {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.testimonials {
+    background-color: #ffffff;
+    padding: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.testimonials h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    color: #3B8E46;
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+
+.testimonials .testimonial-container {
+    font-family: 'Syne', sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap; /* Permet l'adaptation sur petits écrans */
+}
+
+.testimonials .testimonial {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espacement entre l'image et le texte */
+    text-align: left; /* Alignement du texte */
+    max-width: 400px; /* Pour limiter la largeur totale */
+}
+
+.testimonials .testimonial img {
+    width: 126px;
+    height: 139px;
+    object-fit: cover;
+    margin: 0; /* Pas de bordures arrondies */
+}
+
+.testimonials .testimonial p {
+    margin: 0;
+    font-size: 16px;
+    color: #000000 ;
+}
+.testimonials .testimonial p strong {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    display: block; /* Pour isoler le nom */
+    width: 75px;
+    height: 36px;
+    margin: 0; /* On ne gère pas `top` et `left` en CSS simple, ce n'est pas adapté ici */
+    gap: 0px;
+    color: #3B8E46;
+}
+
+
+.flavors .flavor img {
+    width: 393px !important;
+    height: 262px !important;
+    object-fit: cover !important; /* Garde une bonne proportion des images */
+    max-width: none !important; /* Désactive la règle max-width */
+}
+.image-composition {
+    position: relative;
+    display: inline-block;
+}
+
+.feuille {
+    position: absolute;
+    top: 17%; /* Remonte les feuilles */
+    
+}
+
+.feuille.gauche {
+    z-index: 1; /* S'assure que la feuille gauche est derrière la canette */
+    transform: translateX(-75%); /* Centre horizontalement */
+    left: 25%;
+}
+
+.feuille.droite {
+    z-index: 1; /* S'assure que la feuille droite est derrière la canette */
+    transform: translateX(27%); /* Centre horizontalement */
+    left: 25%;
+}
+
+.canette {
+    position: relative;
+    z-index: 2; /* La canette doit être au-dessus des feuilles */
+}
+.cannettes {
+    display: block;
+    margin: 0 auto;
+    transform: translateY(-60px); /* Ajustez -20px pour le décalage vertical */
+}
+
+
+.cannettes img {
+    max-width: 100%; /* Empêche l'image de dépasser la largeur du conteneur */
+    height: auto; /* Maintient les proportions de l'image */
+}
+
+.main-banner {
+    margin: 0 !important;  /* Supprimer la marge de 20px et la remplacer par 0 */
+}
+
+
+/* Section 1 */
+.section-rencontrer {
+    background-color: #ece5e2; /* Beige clair */
+    border-bottom-left-radius: 100% 40%;
+    border-bottom-right-radius: 100% 40%;
+    overflow: hidden;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.section-rencontrer h1 {
+    color: #D2776A;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.6px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.section-rencontrer p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 600px; /* Limite la largeur du texte pour qu'il tienne sur trois lignes */
+    margin: 0 auto; /* Centre le texte */
+}
+
+.section-rencontrer img {
+    transform: rotate(-10deg);
+    float: left;
+    margin-right: 20px;
+    margin-top: -250px; /* Remonte l'image */
+}
+
+/* Section 2 */
+.section-equipe {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative; /* Ajoute cette ligne pour positionner la feuille */
+}
+
+.section-equipe h2 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.section-equipe .team-member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.section-equipe .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.section-equipe .team-member p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #000000;
+}
+
+.section-equipe .team-member p.role {
+    font-size: 14px;
+    color: #666666;
+}
+
+/* Image feuille */
+.section-equipe .feuille {
+    position: absolute;
+    width: 191.21px;
+    height: 219.08px;
+    top: 50%; /* Ajuste la position verticale */
+    left: 80%; /* Ajuste la position horizontale */
+    transform: rotate(0deg);
+    opacity: 1; /* Assure que l'image est visible */
+}
+
+/* Section 3 */
+.section-contact {
+    background-color: #ece5e2; /* Beige clair */
+    padding: 50px 20px;
+    text-align: center;
+    position: relative; /* Ajoute cette ligne pour positionner les cannettes */
+    margin-bottom: 0; /* Enlève l'espace blanc en bas */
+}
+.section-contact h2 {
+    color: #000000;
+    font-family: 'Syne', sans-serif;
+    font-size: 30px; /* Même taille que "L'équipe" */
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.section-contact form {
+    display: inline-block;
+    text-align: left;
+    max-width: 500px; /* Réduit la largeur des champs */
+    width: 100%;
+    margin: 0 auto; /* Centre le formulaire */
+}
+
+.section-contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.section-contact input, .section-contact textarea {
+    width: 100%;
+    padding: 8px; /* Réduit le padding des champs */
+    margin-bottom: 15px; /* Réduit l'espacement entre les champs */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.section-contact .submit-button {
+    background-color: #E0B9B4;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto 20px; /* Centre le bouton et ajoute de l'espace en dessous */
+}
+
+.section-contact .submit-button:hover {
+    background-color: #C02E44;
+}
+.message-container {
+    position: relative;
+    z-index: 1; /* Place le champ de message devant l'image  */
+}
+
+.angle-decoration {
+    
+    position: absolute;
+    bottom: 0;
+    left: -95px;
+    top: 5px;
+    width: 200px; /* Ajustez la taille selon vos besoins */
+    height: auto;
+    z-index: -1; /* Place l'image devant le champ de message */
+}
+
+/* Image incrustée */
+.section-contact .background-image {
+    position: absolute;
+    width: 147.32px;
+    height: 134.97px;
+    top: 1709.21px;
+    left: 580.43px;
+    transform: rotate(160deg);
+    opacity: 0;
+}
+
+/* Fresque des cannettes */
+.section-contact .fresque {
+    width: 100%;
+    max-width: 100%; /* Occupe toute la largeur de la page */
+    text-align: center; /* Centre la fresque */
+    transform: translateY(5px); /* Ajustez -20px pour le décalage vertical */
+}
+
+
+
+/* Page Commander spécifique */
+.commander-page {
+    background-color: #509659; /* Fond vert */
+    padding: 20px 20px 30px;
+    padding-bottom: 30px;
+    max-width: 100%; /* Assure que le fond vert couvre toute la largeur */
+    margin: 0 auto; /* Centre la page */
+}
+
+/* Section 1: COMMANDER */
+.commande-header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 45.6px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%; /* Ajuste la largeur */
+    margin: 0 auto;
+    margin-top: 0; /* Supprime l'espace blanc */
+}
+
+/* Séparateur */
+.commander-page .separator {
+    border: 1px solid #FFFFFF;
+    display: block;
+    width: 100%; /* Ajuste la largeur */
+    max-width: 900px; /* Limite la largeur à 900px */
+    margin: 20px auto; /* Centre le trait de séparation */
+}
+
+
+/* Section 2: Votre commande */
+.commander-page .order-gouts {
+    max-width: 900px; /* Limite la largeur à 900px */
+    margin: 0 auto; /* Centre la section */
+}
+
+.commander-page .order-gouts h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px; /* Réduit la taille du titre */
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 0; /* Aligne à gauche */
+    margin-top: 20px; /* Ajoute un espace sous le trait de h1 */
+}
+
+.commander-page .gout-options {
+    display: flex;
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne suivante */
+    justify-content: space-between; /* Réduit l'espace entre les éléments de manière égale */
+    margin-top: 30px;
+}
+
+.commander-page .gout-container {
+    position: relative;
+    width: 192.53px; /* Largeur fixe */
+    height: 128.36px; /* Hauteur fixe */
+    margin: 0 10px; /* Ajoute un peu d'espace autour des conteneurs */
+}
+
+.commander-page .gout-container img {
+    width: 100%; /* Assure que les images remplissent le conteneur */
+    height: auto; /* Maintient le ratio d'aspect */
+    opacity: 1; /* Assure que les images sont visibles */
+}
+
+
+
+.commander-page .gout-container .gout-name {
+    position: absolute;
+    top: 35%; /* Ajuste cette valeur pour positionner le texte plus haut */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Syne', sans-serif;
+    font-size: 20px; /* Augmente la taille de la police */
+    font-weight: 800;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 5px; /* Optionnel : ajoute un peu de padding autour du texte */
+}
+
+
+
+
+.commander-page .quantity {
+    display: block;
+    margin: 10px auto;
+    width: 25px;
+}
+
+/* Section 3: Formulaires */
+.commander-page .information-forms {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    position: relative;
+}
+
+.commander-page .form-container {
+    width: 45%;
+    max-width: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.commander-page .form-container:first-of-type {
+    margin-left: 60px; /* Légèrement plus décalé vers la droite */
+}
+
+.commander-page .form-container h2,
+.commander-page .form-container label {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.commander-page .form-container input[type="text"],
+.commander-page .form-container input[type="email"] {
+    width: 80%; /* Garder la largeur des champs inchangée */
+    margin: 5px 0;
+    padding: 10px;
+}
+
+.commander-page .separator-vertical {
+    border-left: 2px solid #FFFFFF;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.commander-page h3 {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.commander-page label {
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.commander-page input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Bouton Commander */
+.commander-page .order-button-section {
+    text-align: center;
+    margin-top: 10px; /* Ajuste la marge pour remonter le bouton de 20px */
+    margin-bottom: 80px; /* Ajoute 30px de marge supplémentaire sous le bouton */
+}
+
+.commander-page .order-button {
+    font-family: 'Syne', sans-serif;
+    background-color: #DC9F96;
+    color: white;
+    padding: 9px 56px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none; /* Supprime la bordure noire */
+}
+
+.commander-page .order-button:hover {
+    background-color: #C02E44;
+}
+
 /* Ajout des media queries pour rendre le site responsive */
 @media (max-width: 320px) {
     .site-footer, .header, .main-banner, .plant-energy, .flavors, .testimonials, .section-rencontrer, .section-equipe, .section-contact, .commander-page {
