@@ -2,7 +2,7 @@
  Theme Name:   BlankSlate Child
  Theme URI:    https://example.com/blankslate-child/
  Description:  Thème enfant pour BlankSlate
- Author:       Ton Nom
+ Author:       debart jonathan
  Author URI:   https://example.com
  Template:     blankslate
  Version:      1.0.0
@@ -370,6 +370,7 @@ body {
     transform: rotate(-10deg);
     float: left;
     margin-right: 20px;
+    margin-left: 150px;
     margin-top: -250px; /* Remonte l'image */
 }
 
@@ -514,7 +515,7 @@ body {
     width: 100%;
     max-width: 100%; /* Occupe toute la largeur de la page */
     text-align: center; /* Centre la fresque */
-    transform: translateY(5px); /* Ajustez -20px pour le décalage vertical */
+    transform: translateY(2px); /* Ajustez pour le décalage vertical */
 }
 
 
