@@ -21,7 +21,7 @@
 }
 
 .footer-content {
-    max-width: 1200px; /* Largeur maximale du contenu du footer */
+    max-width: 100%; /* Largeur maximale du contenu du footer */
     margin: 0 auto; /* Centre le contenu horizontalement */
 }
 
@@ -105,7 +105,7 @@ body {
     color: #3B8E46;
 }
 .main-banner img {
-    max-width: 150px;
+    max-width: 100%;
     margin-top: 20px;
 }
 
@@ -285,39 +285,43 @@ body {
 
 
 .flavors .flavor img {
-    width: 393px !important;
-    height: 262px !important;
     object-fit: cover !important; /* Garde une bonne proportion des images */
-    max-width: none !important; /* Désactive la règle max-width */
+    max-width: 100%;
 }
 .image-composition {
+    max-width: 100%;
     position: relative;
     display: inline-block;
 }
 
 .feuille {
+    max-width: 100%;
     position: absolute;
     top: 17%; /* Remonte les feuilles */
     
 }
 
 .feuille.gauche {
+    max-width: 100%;
     z-index: 1; /* S'assure que la feuille gauche est derrière la canette */
     transform: translateX(-75%); /* Centre horizontalement */
     left: 25%;
 }
 
 .feuille.droite {
+    max-width: 100%;
     z-index: 1; /* S'assure que la feuille droite est derrière la canette */
     transform: translateX(27%); /* Centre horizontalement */
     left: 25%;
 }
 
 .canette {
+    max-width: 100%;
     position: relative;
     z-index: 2; /* La canette doit être au-dessus des feuilles */
 }
 .cannettes {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     transform: translateY(-60px); /* Ajustez -20px pour le décalage vertical */
@@ -417,6 +421,7 @@ body {
 
 /* Image feuille */
 .section-equipe .feuille {
+    max-width: 100%;
     position: absolute;
     width: 191.21px;
     height: 219.08px;
@@ -435,6 +440,7 @@ body {
     margin-bottom: 0; /* Enlève l'espace blanc en bas */
 }
 .section-contact h2 {
+    max-width: 100%;
     color: #000000;
     font-family: 'Syne', sans-serif;
     font-size: 30px; /* Même taille que "L'équipe" */
@@ -448,7 +454,7 @@ body {
 .section-contact form {
     display: inline-block;
     text-align: left;
-    max-width: 500px; /* Réduit la largeur des champs */
+    max-width: 100%; 
     width: 100%;
     margin: 0 auto; /* Centre le formulaire */
 }
@@ -512,7 +518,6 @@ body {
 
 /* Fresque des cannettes */
 .section-contact .fresque {
-    width: 100%;
     max-width: 100%; /* Occupe toute la largeur de la page */
     text-align: center; /* Centre la fresque */
     transform: translateY(2px); /* Ajustez pour le décalage vertical */
@@ -704,10 +709,11 @@ body {
     background-color: #C02E44;
 }
 
-/* Ajout des media queries pour rendre le site responsive */
-@media (max-width: 320px) {
-    .site-footer, .header, .main-banner, .plant-energy, .flavors, .testimonials, .section-rencontrer, .section-equipe, .section-contact, .commander-page {
-        padding: 10px;
+/* Media Queries pour petits écrans */
+@media (max-width: 1200px) {
+    .footer-content {
+        max-width: 100%;
+        padding: 0 20px;
     }
 
     .header .logo img {
@@ -716,49 +722,211 @@ body {
         margin-left: 10px;
     }
 
-    .header .menu {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .header .menu a {
-        margin: 5px 0;
         font-size: 14px;
+        margin: 0 5px;
     }
 
     .header .menu .order-button {
         padding: 10px 20px;
-        font-size: 14px;
     }
 
-    .main-banner h1, .plant-energy h2, .flavors h2, .testimonials h2, .section-rencontrer h1, .section-equipe h2, .section-contact h2, .commande-header h1 {
+    .main-banner h1 {
         font-size: 24px;
-        line-height: 28px;
+        line-height: 30px;
     }
 
-    .main-banner img, .flavors .flavor img, .testimonials .testimonial img, .section-rencontrer img, .section-equipe .team-member img, .section-contact .background-image, .commander-page .gout-container img {
-        width: 100%;
-        height: auto;
+    .main-banner img {
+        max-width: 100px;
+    }
+
+    .plant-energy h2 {
+        font-size: 24px;
+    }
+
+    .plant-energy p {
+        font-size: 14px;
     }
 
     .flavors .flavor-list {
         grid-template-columns: 1fr;
     }
 
+    .flavors .flavor .flavor-text {
+        font-size: 36px;
+        line-height: 43.2px;
+    }
+
+    .flavors .order-button {
+        padding: 10px 20px;
+    }
+
+    .flavors h2 {
+        font-size: 24px;
+    }
+
+    .flavors p {
+        font-size: 14px;
+    }
+
+    .testimonials h2 {
+        font-size: 24px;
+    }
+
     .testimonials .testimonial-container {
-        flex-direction: column;
-        gap: 20px;
+        gap: 45px;
+    }
+
+    .testimonials .testimonial {
+        max-width: 100%;
+    }
+
+    .testimonials .testimonial p {
+        font-size: 14px;
+    }
+
+    .testimonials .testimonial p strong {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .flavors .flavor img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cannettes {
+        transform: translateY(-30px);
+    }
+}
+/* Media Queries pour petits écrans */
+@media (max-width: 1200px) {
+    .section-rencontrer {
+        padding: 80px 20px;
+    }
+
+    .section-rencontrer h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .section-rencontrer p {
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .section-rencontrer img {
+        margin-left: 20px;
+        margin-top: -150px;
+        width: 100px;
+        height: auto;
+    }
+
+    .section-equipe h2 {
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .section-equipe .team-member {
-        margin: 10px 0;
+        margin: 10px;
+    }
+
+    .section-equipe .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-equipe .team-member p {
+        font-size: 14px;
+    }
+
+    .section-equipe .team-member p.role {
+        font-size: 12px;
+    }
+
+    .section-equipe .feuille {
+        width: 100px;
+        height: auto;
+        top: 40%;
+        left: 70%;
+    }
+
+    .section-contact h2 {
+        font-size: 24px;
+        line-height: 30px;
     }
 
     .section-contact form {
-        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .section-contact label {
+        font-size: 14px;
+    }
+
+    .section-contact input, .section-contact textarea {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .section-contact .submit-button {
+        padding: 10px 20px;
+    }
+
+    .section-contact .background-image {
+        width: 100px;
+        height: auto;
+    }
+
+    .section-contact .fresque {
+        transform: translateY(0);
+    }
+}
+/* Media Queries pour petits écrans */
+@media (max-width: 1200px) {
+    .commander-page {
+        padding: 10px 10px 20px;
+    }
+
+    .commande-header h1 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .commander-page .separator {
+        max-width: 100%;
+    }
+
+    .commander-page .order-gouts {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .commander-page .order-gouts h2 {
+        font-size: 18px;
     }
 
     .commander-page .gout-options {
+        flex-wrap: wrap;
+    }
+
+    .commander-page .gout-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .commander-page .gout-container .gout-name {
+        font-size: 18px;
+    }
+
+    .commander-page .quantity {
+        width: 20px;
+    }
+
+    .commander-page .information-forms {
         flex-direction: column;
         align-items: center;
     }
@@ -768,7 +936,155 @@ body {
         margin: 10px 0;
     }
 
+    .commander-page .form-container:first-of-type {
+        margin-left: 0;
+    }
+
+    .commander-page .form-container input[type="text"],
+    .commander-page .form-container input[type="email"] {
+        width: 100%;
+    }
+
     .commander-page .separator-vertical {
         display: none;
+    }
+
+    .commander-page h3 {
+        font-size: 18px;
+    }
+
+    .commander-page label {
+        font-size: 14px;
+    }
+
+    .commander-page input {
+        font-size: 14px;
+    }
+
+    .commander-page .order-button-section {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .commander-page .order-button {
+        padding: 8px 40px;
+    }
+}
+/* Media Queries pour le header et le footer */
+@media (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .header .logo {
+        margin: 0 auto;
+    }
+
+    .header .logo img {
+        width: 150px;
+        height: auto;
+    }
+
+    .header .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .header .menu a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .header .menu .order-button {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 10px 0;
+    }
+
+    .site-footer {
+        padding: 10px 20px;
+    }
+
+    .footer-content {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-content a {
+        font-size: 14px;
+    }
+}
+/* Media Queries pour ajuster les images des cannettes et des fruits */
+@media (max-width: 1200px) {
+    .flavors .flavor img,
+    .commander-page .gout-container img,
+    .section-contact .fresque {
+        width: 100%;
+        height: auto;
+    }
+
+    .flavors .flavor .flavor-text,
+    .commander-page .gout-container .gout-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cannettes img,
+    .section-contact .fresque {
+        width: 100%;
+        height: auto;
+    }
+
+    .cannettes {
+        transform: translateY(0);
+    }
+}
+/* Media Queries pour ajuster les images et éviter le débordement */
+@media (max-width: 1200px) {
+    .flavors .flavor img,
+    .commander-page .gout-container img,
+    .section-contact .fresque,
+    .cannettes img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flavors .flavor .flavor-text,
+    .commander-page .gout-container .gout-name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cannettes {
+        transform: translateY(0);
+    }
+
+    .main-banner,
+    .plant-energy,
+    .flavors,
+    .testimonials,
+    .section-rencontrer,
+    .section-equipe,
+    .section-contact,
+    .commander-page {
+        padding: 10px 20px;
+        overflow: hidden;
+    }
+
+    .header,
+    .footer-content {
+        padding: 10px 20px;
+        overflow: hidden;
+    }
+
+    .header .logo img,
+    .header .menu a,
+    .header .menu .order-button,
+    .footer-content a {
+        width: 100%;
+        height: auto;
     }
 }
