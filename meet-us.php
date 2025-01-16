@@ -8,7 +8,7 @@ Template Name: Nous Rencontrer
 <section class="section-rencontrer">
     <h1>NOUS RENCONTRER</h1>
     <p>Chez Planty nous sommes tous passionnés par le bien-être, et ça se retrouve dans nos boissons ! Notre start-up s’est construite au fur et à mesure de rencontres entre amoureux des plantes.</p>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Group 2.png" alt="Rencontre">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/rosace.png" alt="Rencontre">
 </section>
 
 <section class="section-equipe">
