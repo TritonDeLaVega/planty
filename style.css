@@ -8,7 +8,13 @@
  Version:      1.0.0
 */
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap');
-
+#wpadminbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
 .site-footer {
     font-family: 'Syne', sans-serif;
     background-color: #ffffff; /* Couleur de fond du footer */
@@ -989,6 +995,28 @@ body {
     }
 }
 
+/* Media Query pour les écrans max 430px (inclut 426px et 375px) */
+@media (max-width: 430px) {
+    .flavors .flavor {
+        height: 173px;
+    }
+
+    /* Correction pour le menu, valable pour tous les écrans <= 430px */
+    #menu {
+        position: static !important; /* Evite tout positionnement en bas */
+        top: 0 !important; /* Le menu doit commencer en haut de l'écran */
+        bottom: auto !important; /* Evite qu'il soit collé en bas */
+    }
+}
+
+/* Media Query pour les écrans max 375px (specifique à 375px) */
+@media (max-width: 375px) {
+    .section-rencontrer img {
+        margin-left: 0 !important; /* Applique spécifiquement à 375px */
+    }
+}
+
+/* Media Query pour les écrans max 426px */
 @media (max-width: 426px) {
     .section-equipe .feuille {
         width: 10%;
@@ -1021,18 +1049,7 @@ body {
     }
 }
 
-@media (max-width: 375px) {
-    .section-rencontrer img {
-        margin-left: 0 !important; /* Toujours après 426px */
-    }
-}
-
-@media (max-width: 430px) {
-    .flavors .flavor {
-        height: 173px;
-    }
-}
-
+/* Media Query pour les écrans max 320px */
 @media (max-width: 320px) {
     .section-equipe .feuille {
         width: 10%;
