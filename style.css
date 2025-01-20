@@ -1058,3 +1058,210 @@ body {
         left: 88%;
     }
 }
+/* Media Queries pour la page commander */
+
+/* Format 1024px */
+@media (max-width: 1024px) {
+    .commander-page .gout-container {
+        width: 190px; /* Réduit la largeur des gouts */
+        height: auto; /* Ajuste la hauteur en fonction de l'image */
+        margin: 20px;
+    }
+
+    .commander-page .gout-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .commander-page .gout-name {
+        font-size: 18px; /* Réduit la taille de la police pour s'adapter */
+    }
+
+    .commander-page .gout-options {
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre les éléments */
+    }
+
+    .commander-page .information-forms {
+        flex-direction: column; /* Met les formulaires en colonne */
+        align-items: center;
+        margin-top: 20px;
+    
+    }
+    /* Déplacer la partie "Vos informations" */
+    .commander-page .form-container:first-of-type {
+        margin-left: 0 !important; /* Applique la règle à la première partie du formulaire */
+    }
+
+
+    .commander-page .form-container {
+        width: 80%; /* Réduit la largeur des formulaires */
+        margin-bottom: 20px; /* Ajoute un peu d'espace sous chaque formulaire */
+    }
+
+    .commander-page .separator-vertical {
+        display: none; /* Supprime la séparation verticale entre les formulaires */
+    }
+
+    .commander-page .order-button-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Format 768px */
+@media (max-width: 768px) {
+    .commander-page .gout-container {
+        width: 75%; /* Réduit la taille des conteneurs de goûts */
+        height: auto; /* Adapte la hauteur selon l'image */
+        margin: 0 auto; /* Centre chaque conteneur de goût */
+    }
+
+    .commander-page .gout-name {
+        font-size: 16px; /* Réduit la taille de la police */
+    }
+    .commander-page .gout-container img {
+        width: 100%; /* Assure que les images remplissent le conteneur */
+        height: auto; /* Maintient le ratio d'aspect */
+    }
+    .commander-page .gout-options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Crée deux colonnes */
+        gap: 20px; /* Espace entre les éléments */
+        margin-top: 20px; /* Ajuste l'espace entre les sections */
+        justify-items: center; /* Centre les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+    }
+
+    .commander-page .information-forms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commander-page .form-container {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .commander-page .order-button-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Format 425px */
+@media (max-width: 425px) {
+    /* Cibler la page avec l'ID 93 */
+    .page-id-93 .gout-container {
+        width: 90% !important; /* Ajuste la largeur des gouttes */
+        height: auto !important;
+        margin: 0 auto !important; /* Centrer le conteneur des gouttes */
+    }
+
+    .page-id-93 .gout-name {
+        font-size: 14px !important; /* Réduit la taille de la police des gouttes */
+    }
+
+    .page-id-93 .gout-options {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important; /* Espacement entre les éléments de goût */
+    }
+
+    .page-id-93 .information-forms {
+        flex-direction: column !important; /* Met les formulaires en colonne */
+        margin: 0 auto !important; /* Centrer toute la section des formulaires */
+        width: 90% !important; /* Limite la largeur des formulaires */
+        max-width: 350px !important; /* Empêche les formulaires d'être trop larges */
+    }
+
+    .page-id-93 .form-container {
+        width: 100% !important; /* Utilise 100% de la largeur de son conteneur parent */
+        margin: 10px auto !important; /* Centre les formulaires et ajoute un espace vertical */
+        padding: 0 15px !important; /* Ajoute un padding pour éviter que le contenu touche les bords */
+        box-sizing: border-box !important; /* Inclut le padding et la bordure dans la largeur totale */
+    }
+
+    /* Pour les champs de formulaire, garantir qu'ils ne dépassent pas du conteneur */
+    .page-id-93 .form-container input[type="text"],
+    .page-id-93 .form-container input[type="email"] {
+        width: 100% !important; /* Les champs occupent 100% de la largeur de leur conteneur */
+        padding: 12px !important; /* Espacement interne des champs */
+        margin: 10px 0 !important; /* Espacement vertical entre les champs */
+        box-sizing: border-box !important; /* Inclut le padding dans la largeur totale */
+    }
+
+    /* Ajuste la taille du bouton pour qu'il soit également adapté */
+    .page-id-93 .order-button-section {
+        width: 100% !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        padding: 10px !important; /* Ajoute un peu de padding autour du bouton */
+    }
+}
+
+
+
+/* Format 375px */
+@media (max-width: 375px) {
+    .commander-page .gout-container {
+        width: 80px; /* Réduit la largeur des gouttes */
+        height: auto;
+    }
+
+    .commander-page .gout-name {
+        font-size: 12px; /* Réduit la taille de la police */
+    }
+
+    .commander-page .gout-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commander-page .information-forms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commander-page .form-container {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .commander-page .order-button-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Format 320px */
+@media (max-width: 320px) {
+    .commander-page .gout-container {
+        width: 70px; /* Réduit encore la largeur des gouttes */
+        height: auto;
+    }
+
+    .commander-page .gout-name {
+        font-size: 12px; /* Réduit encore la taille de la police */
+    }
+
+    .commander-page .gout-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commander-page .information-forms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .commander-page .form-container {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .commander-page .order-button-section {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
