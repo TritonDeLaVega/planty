@@ -64,36 +64,43 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="POST">
     <section class="order-gouts">
         <h2>Votre commande</h2>
+        <?php
+// Vérifie si on est sur la page avec l'ID 93
+if (is_page(93)) : ?>
         <div class="gout-options">
             <div class="gout">
                 <div class="gout-container">
-                    <img src="<?php echo get_field('gout_1', 85)["url"]?>" alt="<?php echo get_field('gout_1', 85)["alt"]?>">
+                    <img src="<?php echo get_field('gout_1', 93)["url"]?>" alt="<?php echo get_field('gout_1', 93)["alt"]?>">
                     <p class="gout-name">FRAISE</p>
                 </div>
                 <input type="number" name="gout_fraise" min="0" value="0" class="quantity">
             </div>
             <div class="gout">
                 <div class="gout-container">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/pamplemousse.jpg" alt="Pamplemousse">
-                    <p class="gout-name">PAMPLE<br>MOUSSE</p>
+                <img src="<?php echo get_field('gout_2', 93)["url"]?>" alt="<?php echo get_field('gout_2', 93)["alt"]?>">
+                <p class="gout-name">PAMPLE<br>MOUSSE</p>
                 </div>
                 <input type="number" name="gout_pamplemousse" min="0" value="0" class="quantity">
             </div>
             <div class="gout">
                 <div class="gout-container">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/framboise.jpg" alt="Framboise">
-                    <p class="gout-name">FRAM<br>BOISE</p>
+                <img src="<?php echo get_field('gout_3', 93)["url"]?>" alt="<?php echo get_field('gout_3', 93)["alt"]?>">
+                <p class="gout-name">FRAM<br>BOISE</p>
                 </div>
                 <input type="number" name="gout_framboise" min="0" value="0" class="quantity">
             </div>
             <div class="gout">
                 <div class="gout-container">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/citron.jpg" alt="Citron">
-                    <p class="gout-name">CITRON</p>
+                <img src="<?php echo get_field('gout_4', 93)["url"]?>" alt="<?php echo get_field('gout_4', 93)["alt"]?>">
+                <p class="gout-name">CITRON</p>
                 </div>
                 <input type="number" name="gout_citron" min="0" value="0" class="quantity">
             </div>
         </div>
+        <?php 
+// Fin de la condition
+endif;
+?>
         <hr class="separator"> <!-- Ajoutez cette ligne pour le trait de séparation -->
     </section>
 </form>
