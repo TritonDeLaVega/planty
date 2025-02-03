@@ -4,12 +4,12 @@ get_header();
 Template Name: Commander
 */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données du formulaire avec validation et assainissement
+    // Récupérer et valider les quantités commandées
     $flavors = [
-        'fraise' => filter_input(INPUT_POST, 'flavor_fraise', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
-        'pamplemousse' => filter_input(INPUT_POST, 'flavor_pamplemousse', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
-        'framboise' => filter_input(INPUT_POST, 'flavor_framboise', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
-        'citron' => filter_input(INPUT_POST, 'flavor_citron', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
+        'fraise' => filter_input(INPUT_POST, 'gout_fraise', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
+        'pamplemousse' => filter_input(INPUT_POST, 'gout_pamplemousse', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
+        'framboise' => filter_input(INPUT_POST, 'gout_framboise', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
+        'citron' => filter_input(INPUT_POST, 'gout_citron', FILTER_VALIDATE_INT, ['options' => ['min_range' => 0]]) ?: 0,
     ];
 
     $customer_info = [
@@ -62,49 +62,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <hr class="separator">
 
     <form method="POST">
-    <section class="order-gouts">
-        <h2>Votre commande</h2>
-        <?php
-// Vérifie si on est sur la page avec l'ID 93
-if (is_page(93)) : ?>
-        <div class="gout-options">
-            <div class="gout">
-                <div class="gout-container">
-                    <img src="<?php echo get_field('gout_1', 93)["url"]?>" alt="<?php echo get_field('gout_1', 93)["alt"]?>">
-                    <p class="gout-name">FRAISE</p>
+        <section class="order-gouts">
+            <h2>Votre commande</h2>
+            <?php if (is_page(93)) : ?>
+            <div class="gout-options">
+                <div class="gout">
+                    <div class="gout-container">
+                        <img src="<?php echo get_field('gout_1', 93)["url"] ?>" alt="<?php echo get_field('gout_1', 93)["alt"] ?>">
+                        <p class="gout-name">FRAISE</p>
+                    </div>
+                    <input type="number" name="gout_fraise" min="0" value="0" class="quantity">
                 </div>
-                <input type="number" name="gout_fraise" min="0" value="0" class="quantity">
-            </div>
-            <div class="gout">
-                <div class="gout-container">
-                <img src="<?php echo get_field('gout_2', 93)["url"]?>" alt="<?php echo get_field('gout_2', 93)["alt"]?>">
-                <p class="gout-name">PAMPLE<br>MOUSSE</p>
+                <div class="gout">
+                    <div class="gout-container">
+                        <img src="<?php echo get_field('gout_2', 93)["url"] ?>" alt="<?php echo get_field('gout_2', 93)["alt"] ?>">
+                        <p class="gout-name">PAMPLE<br>MOUSSE</p>
+                    </div>
+                    <input type="number" name="gout_pamplemousse" min="0" value="0" class="quantity">
                 </div>
-                <input type="number" name="gout_pamplemousse" min="0" value="0" class="quantity">
-            </div>
-            <div class="gout">
-                <div class="gout-container">
-                <img src="<?php echo get_field('gout_3', 93)["url"]?>" alt="<?php echo get_field('gout_3', 93)["alt"]?>">
-                <p class="gout-name">FRAM<br>BOISE</p>
+                <div class="gout">
+                    <div class="gout-container">
+                        <img src="<?php echo get_field('gout_3', 93)["url"] ?>" alt="<?php echo get_field('gout_3', 93)["alt"] ?>">
+                        <p class="gout-name">FRAM<br>BOISE</p>
+                    </div>
+                    <input type="number" name="gout_framboise" min="0" value="0" class="quantity">
                 </div>
-                <input type="number" name="gout_framboise" min="0" value="0" class="quantity">
-            </div>
-            <div class="gout">
-                <div class="gout-container">
-                <img src="<?php echo get_field('gout_4', 93)["url"]?>" alt="<?php echo get_field('gout_4', 93)["alt"]?>">
-                <p class="gout-name">CITRON</p>
+                <div class="gout">
+                    <div class="gout-container">
+                        <img src="<?php echo get_field('gout_4', 93)["url"] ?>" alt="<?php echo get_field('gout_4', 93)["alt"] ?>">
+                        <p class="gout-name">CITRON</p>
+                    </div>
+                    <input type="number" name="gout_citron" min="0" value="0" class="quantity">
                 </div>
-                <input type="number" name="gout_citron" min="0" value="0" class="quantity">
             </div>
-        </div>
-        <?php 
-// Fin de la condition
-endif;
-?>
-        <hr class="separator"> <!-- Ajoutez cette ligne pour le trait de séparation -->
-    </section>
-</form>
-
+            <?php endif; ?>
+            <hr class="separator">
+        </section>
 
         <section class="information-forms">
             <div class="form-container">
@@ -116,7 +109,7 @@ endif;
                 <label for="email">E-mail:</label>
                 <input type="email" id="email" name="email" required>
             </div>
-            <div class="separator-vertical"></div> <!-- Ajoute le trait de séparation vertical -->
+            <div class="separator-vertical"></div>
             <div class="form-container">
                 <h3>Livraison</h3>
                 <label for="address">Adresse de livraison:</label>
@@ -137,4 +130,3 @@ endif;
 <?php
 get_footer();
 ?>
-

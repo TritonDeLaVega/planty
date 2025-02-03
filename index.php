@@ -3,12 +3,11 @@ get_header();
 ?>
 <section>
 <div class="main-banner">
-    <h1>BOISSON ÉNERGISANTE<br>100% NATURELLE</h1>
+    <h1><?php echo get_field('titre_banniere', 85); ?></h1>
     <div class="image-composition">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/feuille gauche.png" alt="Feuille gauche" class="feuille gauche">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/canette.png" alt="Cannette Planty" class="canette">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/feuille droite.png" alt="Feuille droite" class="feuille droite">
-        
+        <img src="<?php echo get_field('feuille_gauche', 85)['url']; ?>" alt="<?php echo get_field('feuille_gauche', 85)['alt']; ?>" class="feuille gauche">
+        <img src="<?php echo get_field('canette', 85)['url']; ?>" alt="<?php echo get_field('canette', 85)['alt']; ?>" class="canette">
+        <img src="<?php echo get_field('feuille_droite', 85)['url']; ?>" alt="<?php echo get_field('feuille_droite', 85)['alt']; ?>" class="feuille droite">
     </div>
 </div>
 </section>
